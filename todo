@@ -1,0 +1,7 @@
+if you detect outliers on the diagonal of the shift matrix correction will always fail, so they should never be set as outliers (the shift on the diagonal will always be zero…) (edited) 
+12:36
+The report should include the mask and gf parameters used
+12:37
+There should be a progress bar for findImageShifts
+12:38
+Shift matrices should plot with color bars
