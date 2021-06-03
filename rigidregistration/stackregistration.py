@@ -672,6 +672,17 @@ class imstack(object):
         save.save_report(self,fout=fout)
         return
 
+    def save_registered_stack(self, fout):
+        """
+        Saves imstack.registered_stack as bigtiff, appending to fout using tifffile
+        Inputs:
+            fout    str     path to output filename.
+        
+        Written by Noah Schnitzer
+        """
+        save.save_registered_stack(self,fout=fout)
+        return
+
     #################### END IMSTACK OBJECT ####################
 
 

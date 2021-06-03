@@ -6,4 +6,5 @@
 *.ipynb_checkpoints
 ### Miscellaneous files
 *.DS_Store
-
+### virtual Env
+pyEnv
