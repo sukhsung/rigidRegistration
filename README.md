@@ -2,6 +2,10 @@
 
 The rigidregistration package is designed for registering and averaging scanning transmission electron microscopy data, particulary in cases where low signal-to-noise ratios or periodicity-induced artifacts make registration difficult.
 
+## This is a fork from Ben Savitzky's project
+
+This repository includes some quality of life improvements from Ben's original project.
+Make sure to check out original project as well ( https://github.com/bsavitzky/rigidRegistration )
 
 ## A very quick overview
 
@@ -22,7 +26,7 @@ For more detailed discussion, please see the publication associated with this pa
 The code can be acquired by cloning this repository to your computer, using the green "Clone or download" button, or by typing into the command line
 
 ```
-git clone https://github.com/bsavitzky/rigidRegistration.git
+git clone https://github.com/sukhsung/rigidRegistration.git
 ```
 
 Next, install the code by running the setup.py script. Navigate to the rigidregistration directory then type into the command line
@@ -33,7 +37,7 @@ python setup.py install
 
 #### Dependencies
 
-The dependencies of the package are: numpy, matplotlib, jupyter, and tifffile.
+The dependencies of the package are: numpy, scipy, matplotlib, jupyter, and tifffile.
 The package is built to optionally use pyfftw, which significantly speeds up calculations.
 The first three dependencies are already available in most python implementations.
 The last two can be installed from the command line with
@@ -72,6 +76,10 @@ This notebook provides the minimal code required to obtain a registered and aver
 Beginning here is not recommended, as very little explanation or comments are provided, including discussion of parameter selection which may be important for successful registration of your own data.
 The code here may provide a useful starting point for automated batch processing.
 
+4. QuickWalkThrough_SSH.ipynb
+
+This notebook utilizes some of the improvement that I (sukhsung) has implemented.
+
 
 ## Thank you!
 
@@ -104,5 +112,6 @@ Thanks to Robert Hovden for the initial inspiration and assistance in getting th
 Thanks to Colin Clement for many useful discussions.
 Thanks to everyone who provided samples and experimental data, including Ismail El Baggari, Berit H. Goodge, David J. Baek, John P. Sheckelton, Christopher Pasco, Hari Nair, Nathaniel J. Schreiber, Jason Hoffman, Alemayehu S. Admasu, Jaewook Kim, Sang-Wook Cheong, Anand Bhattacharya, Darrell G. Schlom, and Tyrel M. McQueen.
 And thanks to you for using our code - we sincerely hope it is of use!
+Thanks to Noah Schnitzer for providing code for saving the registered stack.
 
 
