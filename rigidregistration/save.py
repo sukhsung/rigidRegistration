@@ -5,7 +5,7 @@ Save functions for stackregistration.py
 from __future__ import print_function, division, absolute_import
 import numpy as np
 import matplotlib.pyplot as plt
-from os.path import splitext
+from os.path import splitext, isfile
 from matplotlib.patches import Rectangle
 from matplotlib.backends.backend_pdf import PdfPages
 import tifffile
